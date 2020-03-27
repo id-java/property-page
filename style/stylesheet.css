@@ -1,0 +1,178 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 2.4em;
+
+    border: 1px red solid;
+}
+
+.header h2 {
+    font-size: 1.5em;
+}
+
+.menuBar {
+    height: 60px;
+    background-color: lightblue;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    line-height: 60px;
+}
+
+.menuBar span {
+    margin-right: 15px;
+    font-size: 1.2em;
+    display: inline-block;
+    text-align: center;
+}
+
+.slideShow {
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 700px;
+    padding: 50px 0;
+}
+
+.carousel__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover ;
+}
+
+.carousel__track-container {
+    height: 100%;
+    position: relative;
+}
+
+.carousel__track {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.carousel__slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    height: 25px;
+    width: 25px;
+    font-size: 20px;
+    background: transparent;
+
+}
+
+.prev {
+    left: -40px;
+}
+
+.next {
+    right: -40px;
+}
+
+.carousel__nav {
+    display: flex;
+    justify-content: center;
+    /* padding: 10px 0; */
+}
+
+.carousel__indicator {
+    background: rgba(0,0,0,0.3);
+    border: 0;
+    border-radius: 30%;
+    height: 15px;
+    width: 12px;
+    margin: 10px 10px;
+}
+
+.active {
+    background: rgba(0,0,0,0.7);
+}
+
+.propDesc {
+    position: relative;
+    border: 1px red solid;
+    width: 80%;
+    max-width: 1200px;
+    height: 200px;
+    margin: auto;
+}
+
+.propDesc ul {
+    display: inline-block;
+    margin: auto;
+    border: 1px red solid;
+    width: 40%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.propDesc1 {
+    display: inline;
+    justify-content: center;
+    text-align: center;
+    float: left;
+    margin-left: 10px;
+}
+
+.propDesc2 {
+    display: inline;
+    justify-content: center;
+    text-align: center;
+    float: right;
+    margin-right: 10px;
+}
+
+.descriptions {
+    font-size: 17px;
+    padding: 5px;
+    font-weight: normal;
+}
+
+.contact {
+    background: lightblue;
+    height: 600px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.contactContainer {
+    max-width: 1200px;
+    border: 1px red solid;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+    display: inline-block;
+}
+
+.contactInfo {
+    float: left;
+    width: 40%;
+    border: 1px red solid;
+    height: 450px;
+    text-align: center;
+    justify-content: center;
+}
+
+.map {
+    border: 1px red solid;
+}
+
+

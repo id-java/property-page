@@ -3,40 +3,11 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Sample Property Page</title>
-        <link href="./stylesheet.css" type="text/css" rel="stylesheet">
+        <link href="./style/stylesheet.css" type="text/css" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="description" content="Property for Rent">
         <meta name="author" content="Parth Koshti">
     </head>
-
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-        showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-        showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("propPics");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-        }
-    </script>
 
     <body>
         <div class="header">
@@ -51,34 +22,71 @@
             <span>Contact Us</span>
         </div>
 
-        <div class="propPics fade">
-            <img src="https://nebula.wsimg.com/5952007ae153a2f14b57b21f7e1a24c6?AccessKeyId=CDB4989A244C1BF0A2F9&disposition=0&alloworigin=1" alt="" class="propImages">
-            <img src="https://nebula.wsimg.com/78c9a3c1591d6ec53c2b2883ed6926de?AccessKeyId=CDB4989A244C1BF0A2F9&disposition=0&alloworigin=1" alt="" class="propImages">
-            <img src="https://nebula.wsimg.com/eb6e9263e41e84c1e1d7b9c76d6f6326?AccessKeyId=CDB4989A244C1BF0A2F9&disposition=0&alloworigin=1" alt="" class="propImages">
-            <img src="https://nebula.wsimg.com/27fa16cc5497e468f8c8c0ed933c03f5?AccessKeyId=CDB4989A244C1BF0A2F9&disposition=0&alloworigin=1" alt="" class="propImages">
+        <div class="slideShow">
+            <button class="prev button">&#10094;</button>
 
-            <button class="leftButton" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="rightButton" onclick="plusDivs(+1)">&#10095;</button>
+            <div class="carousel__track-container">
+                <ul class="carousel__track">
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="./images/image3.jpg" alt="">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="./images/image2.jpg" alt="">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="./images/image1.jpg" alt="">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="./images/image4.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+
+            <button class="next button">&#10095;</button>
+
+            <div class="carousel__nav">
+                <button class="carousel__indicator active"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+            </div>
         </div>
 
         <div class="propDesc">
-            <div class="propdesc1">
-                <p>Description of Propterty 1</p>
-            </div>
 
-            <div class="propDesc2">
-                <p>Description of Property 2</p>
-            </div>
+            <ul class="propDesc1">Executive Stay
+                <li class="descriptions">lorem ipsum dorem immat</li>
+                <li class="descriptions">lorem ipsum dorem immat</li>
+                <li class="descriptions">lorem ipsum dorem immat</li>
+                <li class="descriptions">lorem ipsum dorem immat</li>
+            </ul>
+
+            <ul class="propDesc2">1BR Apartments
+                <li class="descriptions">lorem ipsum dorem immat</li>
+                <li class="descriptions">lorem ipsum dorem immat</li>
+                <li class="descriptions">lorem ipsum dorem immat</li>
+                <li class="descriptions">lorem ipsum dorem immat</li>
+            </ul>
         </div>
 
-        <div class="contact">
-            <div class="map">
-                <p>Embedded Map</p>
-            </div>
+        <div id="contact" class="contact">
 
-            <div class="contactForm">
-                <p>Contact Form</p>
+            <div class="contactContainer">
+
+                <h1>Contact Us</h1>
+
+                <ul class="contactInfo">
+                    Contact Info
+                </ul>
+
+                <ul class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3100.3987046169154!2d-85.63262888465374!3d39.00621754812736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886bb36c36a3e5b7%3A0xf48072497736665a!2sHomePointe%20Extended%20Stay!5e0!3m2!1sen!2sus!4v1585339665789!5m2!1sen!2sus" ... 
+                    width="400" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </ul>
             </div>
         </div>
+       
+    
+        <script type="text/javascript" src="./js/property-page.js"></script>
     </body>
 </html>
