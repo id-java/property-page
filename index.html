@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sample Property Page</title>
+        <link href="./stylesheet.css" type="text/css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="description" content="Property for Rent">
+        <meta name="author" content="Parth Koshti">
+    </head>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("propPics");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
+
+    <body>
+        <div class="header">
+            <h1>Property Name</h1>
+            <h2>Extended Stay</h2>
+            <h3>1234 5th Street, 6Town</h3>
+        </div>
+
+        <div class="menuBar">
+            <span>Fully Furnished</span>
+            <span>1 BR Unfurnished</span>
+            <span>Contact Us</span>
+        </div>
+
+        <div class="propPics fade">
+            <img src="https://nebula.wsimg.com/5952007ae153a2f14b57b21f7e1a24c6?AccessKeyId=CDB4989A244C1BF0A2F9&disposition=0&alloworigin=1" alt="" class="propImages">
+            <img src="https://nebula.wsimg.com/78c9a3c1591d6ec53c2b2883ed6926de?AccessKeyId=CDB4989A244C1BF0A2F9&disposition=0&alloworigin=1" alt="" class="propImages">
+            <img src="https://nebula.wsimg.com/eb6e9263e41e84c1e1d7b9c76d6f6326?AccessKeyId=CDB4989A244C1BF0A2F9&disposition=0&alloworigin=1" alt="" class="propImages">
+            <img src="https://nebula.wsimg.com/27fa16cc5497e468f8c8c0ed933c03f5?AccessKeyId=CDB4989A244C1BF0A2F9&disposition=0&alloworigin=1" alt="" class="propImages">
+
+            <button class="leftButton" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="rightButton" onclick="plusDivs(+1)">&#10095;</button>
+        </div>
+
+        <div class="propDesc">
+            <div class="propdesc1">
+                <p>Description of Propterty 1</p>
+            </div>
+
+            <div class="propDesc2">
+                <p>Description of Property 2</p>
+            </div>
+        </div>
+
+        <div class="contact">
+            <div class="map">
+                <p>Embedded Map</p>
+            </div>
+
+            <div class="contactForm">
+                <p>Contact Form</p>
+            </div>
+        </div>
+    </body>
+</html>

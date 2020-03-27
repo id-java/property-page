@@ -1,0 +1,64 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 2.4em;
+}
+
+.header h2 {
+    font-size: 1.5em;
+}
+
+.menuBar {
+    height: 60px;
+    background-color: lightblue;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    line-height: 60px;
+}
+
+.menuBar span {
+    margin-right: 15px;
+    font-size: 1.2em;
+    display: inline-block;
+    text-align: center;
+}
+
+.propPics {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.propImages {
+    max-height: 200px;
+    /* display: none; */
+}
+
+/* .leftButton, .rightButton {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .nextButton {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  } */
