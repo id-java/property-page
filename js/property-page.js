@@ -1,4 +1,4 @@
-const track = document.querySelector('.carousel__track');
-const slides = Array.from(track.children);
+// const track = document.querySelector('.carousel__track');
+// const slides = Array.from(track.children);
 
-console.log(track);
+// console.log(track);

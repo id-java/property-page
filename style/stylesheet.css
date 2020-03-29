@@ -44,7 +44,7 @@ body {
 .menuBar {
     /* height: 100px; */
     text-align: center;
-    background-color: rgba(21, 159, 0, 0.714);
+    background-color: rgba(21, 159, 0, 0.92);
     color: white;
     line-height: 50px;
     font-family: 'Raleway', sans-serif;
@@ -59,6 +59,8 @@ body {
     /* line-height: 50px; */
     /* padding: 0 5px 0 5px; */
 }
+
+
 
 .menuBar a:link, a:visited {
     text-decoration: none;
@@ -297,6 +299,12 @@ body {
 }
 
 .cred {
-    margin: 25px 0 5px 15px;
+    padding-bottom: 15px;
     font-size: 0.7em;
+    margin: auto;
+    text-align: center;
+}
+
+.cred a:visited {
+    color: black;
 }
