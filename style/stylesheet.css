@@ -42,7 +42,7 @@ body {
 }
 
 .menuBar {
-    height: 50px;
+    /* height: 100px; */
     text-align: center;
     background-color: rgba(21, 159, 0, 0.714);
     color: white;
@@ -51,12 +51,13 @@ body {
 }
 
 .menuBar a {
-    margin-right: 15px;
+    margin-left: 15px;
     font-size: 1.5em;
     display: inline-block;
-    text-align: center;
-    line-height: 50px;
-    padding: 0 5px 0 5px;
+    font-weight: 600;
+    /* text-align: center; */
+    /* line-height: 50px; */
+    /* padding: 0 5px 0 5px; */
 }
 
 .menuBar a:link, a:visited {
@@ -70,6 +71,7 @@ body {
 .menuBar a:hover {
     /* background-color: rgba(46, 238, 36, 0.625); */
     color: black;
+    /* background-color: white; */
 }
 
 .site-desc {
@@ -78,6 +80,67 @@ body {
     margin: auto;
     margin-top: 15px;
 }
+
+/* ysSlider Implementation */
+.ysslider {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    /* border: red solid; */
+}
+
+.img-container {
+    height: 100%;
+    /* border: blue solid; */
+    width: 80%;
+    margin: auto;
+}
+
+.ysslider img {
+    height: 50vh;
+    object-fit: cover;
+    /* border: solid green; */
+    margin: auto;
+    width: 100%;
+}
+
+ .controlbar {
+    /* position: absolute; */
+    /* top: 50%; */
+    /* border: solid 1px red; */
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+}
+
+.controlbar a:link {
+    text-decoration: none;
+    color: black;
+    /* background-color: rgba(0,0,0,0.1); */
+}
+
+.controlbar a:hover {
+    background-color: rgba(21, 159, 0, 0.714);
+    color: white;
+}
+
+.controlbar .prev {
+    /* border: green solid 1px; */
+    width: 50px;
+    display: inline-block;
+}
+
+.controlbar .next {
+    /* border: blue solid 1px; */
+    width: 50px;
+    display: inline-block;
+}
+
+/* 
 
 .slideShow {
     max-width: 1200px;
@@ -136,7 +199,6 @@ body {
 .carousel__nav {
     display: flex;
     justify-content: center;
-    /* padding: 10px 0; */
 }
 
 .carousel__indicator {
@@ -150,7 +212,7 @@ body {
 
 .active {
     background: rgba(0,0,0,0.7);
-}
+} */
 
 .propDesc {
     position: relative;
