@@ -2,146 +2,125 @@
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Sample Property Page</title>
-        <link href="./style/stylesheet.css" type="text/css" rel="stylesheet">
-        <meta charset="UTF-8">
-        <meta name="description" content="Property for Rent">
-        <meta name="author" content="Parth Koshti">
-        <link href="https://fonts.googleapis.com/css?family=Lato|Raleway&display=swap" rel="stylesheet">     </head>
-        <script src="./ysSlider/js/ysslider.js"></script>
-        <link rel="stylesheet" href="./ysSlider/js/ysslider.js" />
-    <body>
-        <div class="header">
-            <h1>HomePointe</h1>
-            <h2>Extended Stay</h2>
-            <h3>1234 5th Street, 6Town, IN</h3>
-            <h4>(123) 456-7890</h4>
-        </div>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sample Property Page</title>
+    <link href="./style/stylesheet.css" type="text/css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Property for Rent" />
+    <meta name="author" content="Parth Koshti" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Raleway&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <script src="./ysSlider/js/ysslider.js"></script>
+  <link rel="stylesheet" href="./ysSlider/js/ysslider.js" />
+  <body>
+    <div class="header">
+      <h1>HomePointe</h1>
+      <h2>Extended Stay</h2>
+      <h3>1234 5th Street, 6Town, IN</h3>
+      <h4>(123) 456-7890</h4>
+    </div>
 
-        <div class="menuBar">
-            <a href="#exec">Fully Furnished</a>
-            <a href="#1br">1 BR Unfurnished</a>
-            <a href="#contact">Contact Us</a>
-        </div>
+    <div class="menuBar">
+      <a href="#exec">Fully Furnished</a>
+      <a href="#1br">1 BR Unfurnished</a>
+      <a href="#contact">Contact Us</a>
+    </div>
 
-        <div class="site-desc">
-            <h4>Executive Suites and Apartments for Rent in North Vernon, Indiana</h4>
-        </div>
+    <div class="site-desc">
+      <h4>Executive Suites and Apartments for Rent in North Vernon, Indiana</h4>
+    </div>
 
+    <!-- ySSLider Implementation -->
 
-        <!-- ySSLider Implementation -->
+    <div class="ysslider">
+      <div class="img-container">
+        <div class="item"><img src="./images/image1.jpg" /></div>
+        <div class="item"><img src="./images/image2.jpg" /></div>
+        <div class="item"><img src="./images/image3.jpg" /></div>
+        <div class="item"><img src="./images/image4.jpg" /></div>
+        <div class="item"><img src="./images/image5.jpg" /></div>
+        <div class="item"><img src="./images/image6.jpg" /></div>
+        <div class="item"><img src="./images/image7.jpg" /></div>
+        <div class="item"><img src="./images/image8.jpg" /></div>
+      </div>
 
+      <div class="controlbar">
+        <a href="javascript:void(0);" class="prev">&#10094;</a>
+        <a href="javascript:void(0);" class="next">&#10095;</a>
+      </div>
+    </div>
 
-        <div class="ysslider">
+    <div class="propDesc">
+      <ul class="propDesc1" id="exec">
+        <h1>Executive Stay</h1>
+        <li class="descriptions">
+          Fully Furnished including Kitchen Accessories
+        </li>
+        <li class="descriptions">
+          Wifi & Smart TV's in Living Room and Bedroom
+        </li>
+        <li class="descriptions">Personal Washer & Dryer</li>
+        <li class="descriptions">Parking</li>
+      </ul>
 
-            <div class="img-container">
-                <div class="item"><img src="./images/image1.jpg" /></div>
-                <div class="item"><img src="./images/image2.jpg" /></div>
-                <div class="item"><img src="./images/image3.jpg" /></div>
-                <div class="item"><img src="./images/image4.jpg" /></div>
-                <div class="item"><img src="./images/image5.jpg" /></div>
-                <div class="item"><img src="./images/image6.jpg" /></div>
-                <div class="item"><img src="./images/image7.jpg" /></div>
-                <div class="item"><img src="./images/image8.jpg" /></div>   
-            </div>
+      <ul class="propDesc2" id="1br">
+        <h1>Single Bedroom Apartments</h1>
+        <li class="descriptions">Full size appliances provided</li>
+        <li class="descriptions">Double Pane Treated Windows</li>
+        <li class="descriptions">Parking</li>
+        <li class="descriptions">Water and Trash Disposal</li>
+      </ul>
+    </div>
 
-            
-            <div class="controlbar">
-                <a href="javascript:void(0);" class="prev">&#10094;</a>
-                <a href="javascript:void(0);" class="next">&#10095;</a>
-            </div>
+    <div id="contact" class="contact">
+      <div class="contactContainer">
+        <h1>Contact Us</h1>
 
-          </div>
+        <ul class="contactInfo">
+          <h3>D. Bradshaw</h3>
+          <h4>Phone: (123) 456-7890</h4>
+          <h4>
+            Email: <a href="mailto:youremail@address.com">db@property.com</a>
+          </h4>
+        </ul>
 
+        <ul class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3100.3987046169154!2d-85.63262888465374!3d39.00621754812736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886bb36c36a3e5b7%3A0xf48072497736665a!2sHomePointe%20Extended%20Stay!5e0!3m2!1sen!2sus!4v1585339665789!5m2!1sen!2sus"
+            ...
+            frameborder="0"
+            style="border: 0;"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </ul>
+      </div>
+    </div>
+    <div class="cred">
+      <a href="http://parthkoshti.com" target="_blank"
+        >© 2020 All Rights Reserved. Created by Parth Koshti.</a
+      >
+    </div>
 
-          <!-- /ysSlider Implementation -->
-          
-        <!-- <div class="slideShow">
-            <button class="prev button">&#10094;</button>
+    <script type="text/javascript" src="./js/property-page.js"></script>
+  </body>
 
-            <div class="carousel__track-container">
-                <ul class="carousel__track">
-                    <li class="carousel__slide">
-                        <img class="carousel__image" src="./images/image3.jpg" alt="">
-                    </li>
-                    <li class="carousel__slide">
-                        <img class="carousel__image" src="./images/image2.jpg" alt="">
-                    </li>
-                    <li class="carousel__slide">
-                        <img class="carousel__image" src="./images/image1.jpg" alt="">
-                    </li>
-                    <li class="carousel__slide">
-                        <img class="carousel__image" src="./images/image4.jpg" alt="">
-                    </li>
-                </ul>
-            </div>
+  <footer>
+    <script>
+      var mySlider = new ysSlider();
 
-            <button class="next button">&#10095;</button>
+      document.querySelector(".prev").onclick = function () {
+        mySlider.prev();
+      };
 
-            <div class="carousel__nav">
-                <button class="carousel__indicator active"></button>
-                <button class="carousel__indicator"></button>
-                <button class="carousel__indicator"></button>
-                <button class="carousel__indicator"></button>
-            </div>
-        </div> -->
-
-        <div class="propDesc">
-
-            <ul class="propDesc1" id="exec"><h1>Executive Stay</h1>
-                <li class="descriptions">Fully Furnished including Kitchen Accessories</li>
-                <li class="descriptions">Wifi & Smart TV's in Living Room and Bedroom</li>
-                <li class="descriptions">Personal Washer & Dryer</li>
-                <li class="descriptions">Parking</li>
-            </ul>
-
-            <ul class="propDesc2" id="1br"><h1>Single Bedroom Apartments</h1>
-                <li class="descriptions">Full size appliances provided</li>
-                <li class="descriptions">Double Pane Treated Windows</li>
-                <li class="descriptions">Parking</li>
-                <li class="descriptions">Water and Trash Disposal</li>
-            </ul>
-        </div>
-
-        <div id="contact" class="contact">
-
-            <div class="contactContainer">
-
-                <h1>Contact Us</h1>
-
-                <ul class="contactInfo">
-
-                    <h3>D. Bradshaw</h3>
-                    <h4>Phone: (812) 234-6789</h4>
-                    <h4> Email: <a href="mailto:youremail@address.com">db@property.com</a></h4>
-                </ul>
-
-                <ul class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3100.3987046169154!2d-85.63262888465374!3d39.00621754812736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886bb36c36a3e5b7%3A0xf48072497736665a!2sHomePointe%20Extended%20Stay!5e0!3m2!1sen!2sus!4v1585339665789!5m2!1sen!2sus" ... 
-                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                </ul>
-            </div>
-        </div>
-        <div class="cred">
-            <a href="http://parthkoshti.com" target="_blank">© 2020 All Rights Reserved. Created by Parth Koshti.</a>
-        </div>
-    
-        <script type="text/javascript" src="./js/property-page.js"></script>
-    </body>
-
-    <footer>
-        <script>
-            var mySlider = new ysSlider();
-
-            document.querySelector(".prev").onclick = function () {
-            mySlider.prev();
-            }
-
-            document.querySelector(".next").onclick = function () {
-            mySlider.next();
-            }
-        </script>
-    </footer>
+      document.querySelector(".next").onclick = function () {
+        mySlider.next();
+      };
+    </script>
+  </footer>
 </html>
