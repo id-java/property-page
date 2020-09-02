@@ -96,21 +96,34 @@ a:visited {
   height: 100%;
   /* border: blue solid; */
   width: 80%;
+  max-width: 100%;
   margin: auto;
 }
 
-.ysslider img {
-  height: 60vh;
-  object-fit: cover;
-  /* border: solid green; */
-  margin: auto;
-  width: 100%;
+@media screen and (max-width: 600px) {
+  .img-container {
+    width: 100%;
+  }
+
+  .yslider {
+  }
+}
+@media screen and (max-width: 900px) {
+  .yslider img {
+    height: 10vh;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .ysslider img {
+    height: 60vh;
+    object-fit: cover;
+    margin: auto;
+    width: 100%;
+  }
 }
 
 .controlbar {
-  /* position: absolute; */
-  /* top: 50%; */
-  /* border: solid 1px red; */
   width: 200px;
   height: 50px;
   text-align: center;

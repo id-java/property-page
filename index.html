@@ -114,6 +114,11 @@
     <script>
       var mySlider = new ysSlider();
 
+      mySlider.init({
+        animate: true,
+        auto: true,
+      });
+
       document.querySelector(".prev").onclick = function () {
         mySlider.prev();
       };
